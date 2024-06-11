@@ -1,0 +1,171 @@
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Estilos para o aplicativo de clima */
+  .weather-app {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Pesquisa */
+  .pesquisa {
+    margin-bottom: 20px;
+  }
+  
+  .pesquisa-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .pesquisa-topo i {
+    color: #007BFF;
+    margin-right: 10px;
+  }
+  
+  .localizacao {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .barra-pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .barra-pesquisa input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  .barra-pesquisa i {
+    color: #ccc;
+  }
+  
+  /* Estilos do tempo */
+  .weather {
+    margin-bottom: 10px;
+  }
+  
+  .weather img {
+    margin-top: 10%;
+    max-width: 100%;
+    height: auto; /* Manter proporção da imagem */
+    width: 500px; /* Aumenta o tamanho da imagem */
+  }
+  
+  .weather-tipo {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .temperatura {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Data do clima */
+  .weather-date p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Dados adicionais do clima */
+  .weather-data {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .humidade, .wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .data-name {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .humidade i, .wind i {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 5px;
+  }
+  
+  .data {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .weather-app {
+      padding: 15px;
+    }
+    
+    .weather img {
+      width: 180px; /* Ajusta o tamanho da imagem em telas menores */
+    }
+  
+    .temperatura {
+      font-size: 1.8em;
+    }
+  
+    .weather-data {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .humidade, .wind {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pesquisa-topo {
+      flex-direction: column;
+    }
+  
+    .localizacao {
+      font-size: 1em;
+    }
+  
+    .weather-tipo {
+      font-size: 1em;
+    }
+  
+    .temperatura {
+      font-size: 1.5em;
+    }
+  
+    .weather img {
+      width: 150px; /* Ajusta o tamanho da imagem em telas menores */
+    }
+  
+    .weather-data {
+      margin-top: 15px;
+    }
+  }
+  
